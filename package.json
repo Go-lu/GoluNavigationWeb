@@ -131,6 +131,7 @@
     "cssnano-preset-default": "^5.2.14",
     "cssnano-utils": "^3.1.0",
     "csso": "^4.2.0",
+    "crypto-js": "^4.2.0",
     "csstype": "^3.1.2",
     "de-indent": "^1.0.2",
     "debug": "^4.3.4",
