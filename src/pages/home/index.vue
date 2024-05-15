@@ -17,7 +17,7 @@
                     🦈
                 </div>
             </div>
-            Copyright © 2016-2023
+            Copyright © 2016-{{new Date().getFullYear()}}
             <a :href="webdata.copyRightLink">{{ webdata.copyRightText }}</a> All
             rights reserved.
         </div>
