@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">GoluNavigationWeb</h1>
 
-## 此项目为[GoluNavigationServer](https://github.com/Go-lu/GoluNavigationServer)项目的前端，需搭配使用
+## 此项目为[GoluNavigationServer](https://github.com/Go-lu/GoluNavigationServer)项目的前端部分，需搭配后端使用
 ### 一个简洁且现代化的导航页，前端使用vue，后端node，数据持久化到sqlite
 
 ##### 设计效果：
