@@ -627,8 +627,8 @@ export default {
                         roundButton: true
                     }).then(({ value }) => {
                         const secretPwd = CryptoJS.MD5(value+salt).toString();
-                        console.log(secretPwd);
-                        console.log(value);
+                        // console.log(secretPwd);
+                        // console.log(value);
                         getAuth({password: secretPwd}).then(res=>{
                             if (res.msg){
                                 this.$message({
@@ -738,7 +738,7 @@ export default {
                 try {
                     if (locationInfo.code === 1) {
                         this.adCode = locationInfo['msg'].content['address_detail']['adcode'];
-                        console.log(this.adCode);
+                        // console.log(this.adCode);
                     } else console.log(locationInfo);
                 } catch (e) {
                     console.log(e);
