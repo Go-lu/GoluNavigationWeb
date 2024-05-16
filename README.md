@@ -1,7 +1,8 @@
 <h1 style="text-align: center;">GoluNavigationWeb</h1>
 
-## 此项目为[GoluNavigationServer](https://gitee.com/golu-ljg/golu-navigation-server)项目的前端部分，需搭配后端使用
+## 此项目为[GoluNavigationServer](https://github.com/Go-lu/GoluNavigationServer)项目的前端部分，需搭配后端使用
 ### 一个简洁且现代化的导航页，前端使用vue，后端node，数据持久化到sqlite
+### [在gitee看此项目](https://github.com/Go-lu/GoluNavigationWeb)
 
 #### 功能列表：
 > - [x] 具有ipv6、ipv4、lan(内网)三种网络状态的导航聚合切换
@@ -40,4 +41,4 @@
 >   >  打包：
 >   >
 >   >  `npm run build` 
-> 2. 将打包后的dist目录扔进[GoluNavigation](https://gitee.com/golu-ljg/golu-navigation-server)后端项目根目录中
+> 2. 将打包后的dist目录扔进[GoluNavigation](https://github.com/Go-lu/GoluNavigationServer)后端项目根目录中
