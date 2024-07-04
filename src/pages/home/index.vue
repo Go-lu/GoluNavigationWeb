@@ -210,6 +210,7 @@
                 <el-form-item label="图标(不上传自动获取)">
                     <el-upload
                             class="avatar-uploader"
+                            accept=".jpeg,.png,.jpg,.bmp,.gif,.ico"
                             action="/api/upload"
                             :show-file-list="false"
                             :on-success="handleAvatarSuccess"
@@ -666,21 +667,21 @@ export default {
             this.navForm = {
                 name: '',
                 url: '',
-                imageUrl: ''
+                image_url: ''
             };
         },
 
         /* 文件上传 */
         handleAvatarSuccess(res, file) {
-            // this.imageUrl = URL.createObjectURL(file.raw);
+            // this.image_url = URL.createObjectURL(file.raw);
             if (res.success)
-                this.navForm.imageUrl = res.path;
-            else this.navForm.imageUrl = URL.createObjectURL(file.raw);
+                this.navForm.image_url = res.path;
+            else this.navForm.image_url = URL.createObjectURL(file.raw);
             // console.log(res)
         },
         beforeAvatarUpload(file) {
             this.formFile = file;
-            const isImage = file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'image/ico';
+            const isImage = file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'image/x-icon';
             const isLt2M = file.size / 1024 / 1024 < 2;
 
             if (!isImage) {
